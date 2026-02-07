@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: yellow;
+}
+
+.header {
+  padding: 30px 200px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.title {
+  font-size: 80px;
+  color: green;
+  text-align: left;
+}
+
+#first-title {
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-weight: 900;
+  color: #518b32;
+  font-family: "Roboto", sans-serif;
+}
+
+form p {
+  font-size: 25px;
+}
+
+#lorem {
+  font-size: 100px;
+  font-family: "Pinyon Script";
+}
+
+.container-position {
+  margin-left: 300px;
+  height: 800px;
+  width: 1000px;
+  background-color: aquamarine;
+  position: relative;
+  top: 1200px;
+}
+
+.container {
+  border: 2px solid black;
+  height: 300px;
+  width: 120px;
+  margin: 50px;
+  display: flex;
+  gap: 10px;
+  top: 300px;
+  left: 100px;
+  position: absolute;
+}
+
+/* 
+Relative:
+1. 
+2. 
+
+*/
+
+/* 
+positions:
+1. static 
+2. absolute
+3. relative
+4. fixed
+5. sticky
+
+*/
+
+.box {
+  background-color: #c39cfa;
+  color: #fff;
+  font-size: 32px;
+  padding: 20px;
+  margin: 30px 10px 40px;
+
+  text-align: center;
+  display: inline-block;
+}
+
+.box-3 {
+  flex-grow: 2;
+  flex-shrink: 1;
+}
+
+.box-4 {
+  flex: 2 2 400px;
+}
+.box-6 {
+  flex-grow: 4;
+  flex-shrink: 3;
+}
+
+.box-5 {
+  flex-grow: 1;
+}
+
+.image {
+  width: 400px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 100px;
+}
+
+a {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  width: 1200px;
+  height: 600px;
+  background-color: #518b32;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 20px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 200px;
+  justify-content: end;
+  align-content: end;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.box-2 {
+  background-color: bisque;
+  grid-column: 2/3;
+  /* grid-row: span 2; */
+}
+
+.box-3 {
+  background-color: lightskyblue;
+  grid-column: 1/2;
+}
+
+.box-1 {
+  background-color: coral;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.box-6 {
+  background-color: violet;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
